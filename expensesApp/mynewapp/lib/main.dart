@@ -141,7 +141,7 @@ class _MyHomePageState extends State<MyHomePage> {
               fontWeight: FontWeight.bold,
             ),
           ),
-          Switch.adaptive(
+          Switch.adaptive (
             activeColor: Colors.indigo,
             inactiveTrackColor: Colors.grey,
             value: _showChart,
