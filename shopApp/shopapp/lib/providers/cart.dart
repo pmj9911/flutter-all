@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/widgets.dart';
 
 class CartItem {
@@ -27,8 +25,12 @@ class Cart with ChangeNotifier {
     return _items.length;
   }
 
-  void removeItem(String prodId) {
-    _items.remove(prodId);
+  void removeItem(String productId) {
+    _items.remove(productId);
+  }
+
+  void clear() {
+    _items = {};
     notifyListeners();
   }
 
